@@ -1,0 +1,40 @@
+---
+const ways = [
+  { icon: "💚", title: "Sponsor a treehouse", description: "Fund the construction of a Swasia treehouse in your community" },
+  { icon: "🛠️", title: "Share your skills", description: "Contribute your expertise in design, technology, or education" },
+  { icon: "🌍", title: "Support the mission", description: "Help us grow through donations or partnerships" },
+  { icon: "🏘️", title: "Bring Swasia to your community", description: "Be the catalyst for change in your neighborhood" },
+  { icon: "📢", title: "Spread the word", description: "Share our story and help the movement grow" }
+];
+---
+
+<section id="join" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">How You Can Join Us</h2>
+      <p class="text-xl text-gray-600 mb-16">
+        Every treehouse starts with a single seed. You could be the one who plants it.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
+      {ways.map((way) => (
+        <div class="bg-green-50 rounded-xl p-6 hover:bg-green-100 transition-colors">
+          <div class="text-3xl mb-3">{way.icon}</div>
+          <h3 class="text-lg font-semibold mb-2">{way.title}</h3>
+          <p class="text-gray-700 text-sm">{way.description}</p>
+        </div>
+      ))}
+    </div>
+    
+    <div class="text-center">
+      <p class="text-lg text-gray-700 mb-8">
+        We're partnering with environmental NGOs, urban planners, smart city teams, schools, and communities. 
+        Together, we're creating something that belongs to everyone — and grows with every hand that touches it.
+      </p>
+      <a href="mailto:contact@swasia.org" class="inline-block px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors font-medium">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+</section>

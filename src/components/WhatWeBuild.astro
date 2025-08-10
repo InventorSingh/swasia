@@ -1,0 +1,47 @@
+---
+const features = [
+  {
+    icon: "🌳",
+    title: "Built Around Trees",
+    description: "Each treehouse is built around existing trees or within microforests"
+  },
+  {
+    icon: "♻️",
+    title: "Sustainable Materials",
+    description: "Using child-safe and recycled materials for construction"
+  },
+  {
+    icon: "📊",
+    title: "Environmental Sensors",
+    description: "Measuring air quality, cooling effects, and biodiversity indicators"
+  },
+  {
+    icon: "📚",
+    title: "Learning Spaces",
+    description: "Public spaces for environmental education and community gathering"
+  },
+  {
+    icon: "💻",
+    title: "Real-time Dashboard",
+    description: "Community access to live environmental data and impact metrics"
+  }
+];
+---
+
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">What We're Building</h2>
+    <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+      Each Swasia Treehouse is a living laboratory that combines nature, technology, and community.
+    </p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {features.map((feature) => (
+        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow">
+          <div class="text-4xl mb-4">{feature.icon}</div>
+          <h3 class="text-xl font-semibold mb-2">{feature.title}</h3>
+          <p class="text-gray-700">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
