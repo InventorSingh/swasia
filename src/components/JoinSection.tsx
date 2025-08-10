@@ -38,15 +38,28 @@ export default function JoinSection() {
           We're partnering with environmental NGOs, urban planners, smart city teams, schools, and communities. 
           Together, we're creating something that belongs to everyone — and grows with every hand that touches it.
         </p>
-        <motion.a
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          href="mailto:contact@swasia.org"
-          className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors font-medium shadow-lg hover:shadow-xl"
-        >
-          <Mail className="w-5 h-5" />
-          Get in Touch
-        </motion.a>
+        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="mailto:Singh.Gurprit@outlook.com"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors font-medium shadow-lg hover:shadow-xl"
+          >
+            <Mail className="w-5 h-5" />
+            Email Us
+          </motion.a>
+          
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="tel:+14387223299"
+            className="inline-flex items-center gap-2 px-8 py-4 border-2 border-green-600 text-green-700 rounded-full hover:bg-green-50 transition-colors font-medium"
+          >
+            <span>📞</span>
+            +1 438 722 3299
+          </motion.a>
+        </div>
       </div>
     </>
   );
