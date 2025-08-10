@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Baby, Globe2 } from 'lucide-react';
+import { Target, Users } from 'lucide-react';
 
 export default function MissionContent() {
   return (
@@ -25,12 +25,12 @@ export default function MissionContent() {
           className="text-center"
         >
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Baby className="w-10 h-10 text-green-600" />
+            <Target className="w-10 h-10 text-green-600" />
           </div>
-          <h3 className="text-2xl font-semibold mb-3">The Heart of Swasia: Sia</h3>
+          <h3 className="text-2xl font-semibold mb-3">Our Approach</h3>
           <p className="text-gray-600 leading-relaxed">
-            Named after my daughter Sia — meaning victory, blessing, and grace. 
-            This project is her legacy, ensuring every child grows up with clean air and green spaces as fundamental rights.
+            Swasia stands at the crossroads of architecture, ecology, and technology — 
+            proving that nature doesn't need to be kept outside our cities. Nature is the city.
           </p>
         </motion.div>
         
@@ -41,12 +41,12 @@ export default function MissionContent() {
           className="text-center"
         >
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Globe2 className="w-10 h-10 text-green-600" />
+            <Users className="w-10 h-10 text-green-600" />
           </div>
-          <h3 className="text-2xl font-semibold mb-3">Global Impact</h3>
+          <h3 className="text-2xl font-semibold mb-3">Community Impact</h3>
           <p className="text-gray-600 leading-relaxed">
-            Swasia stands at the crossroads of architecture, ecology, and technology — 
-            proving that nature doesn't need to be kept outside our cities. Nature is the city.
+            Each treehouse becomes a gathering place for learning, healing, and environmental awareness, 
+            creating lasting connections between people and nature in urban spaces.
           </p>
         </motion.div>
       </div>
