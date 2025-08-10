@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 
 export default defineConfig({
-  site: 'https://yourusername.github.io',
+  site: 'https://inventorsingh.github.io',
   base: '/swasia',
   integrations: [
     tailwind(),
