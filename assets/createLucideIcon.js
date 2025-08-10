@@ -1,4 +1,4 @@
-import{r as P}from"./index.CVf8TyFT.js";var bs={exports:{}},Gt={};/**
+import{r as P}from"./index.js";var bs={exports:{}},Gt={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
