@@ -5,9 +5,10 @@ import { Coffee, Heart } from 'lucide-react';
 export default function SupportSection() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, margin: "-100px" }}
       className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 md:p-12 text-center border border-yellow-200"
     >
       <div className="flex justify-center mb-6">
@@ -21,9 +22,9 @@ export default function SupportSection() {
       </h3>
       
       <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-        Every cup of coffee helps fuel the vision of bringing nature back to our cities. 
-        Your support directly contributes to building treehouses that clean our air and create 
-        spaces where children can learn, play, and dream.
+        Every cup of coffee helps fuel practical environmental action in rural communities. 
+        Your support directly funds seed collection programs, waste management education, 
+        and community habits that create immediate positive impact.
       </p>
       
       <motion.a

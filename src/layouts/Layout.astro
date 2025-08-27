@@ -39,4 +39,15 @@ const { title } = Astro.props;
       font-family: 'Inter var', system-ui, sans-serif;
     }
   }
+
+  /* Enhanced scrolling for better performance */
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  /* Smooth transitions for all elements */
+  section {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
 </style>
