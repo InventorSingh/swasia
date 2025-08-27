@@ -18,7 +18,7 @@ const features = [
   {
     icon: Users,
     title: "Village Champions",
-    description: "Training local leaders like Sattu Mama and Bulli Mama Ji to drive sustainable change in their communities",
+    description: "Local leaders like Sattu Khatkar (Badhana) and Paradeep Khatkar (Uchana) driving sustainable change",
     color: "text-purple-600"
   },
   {
