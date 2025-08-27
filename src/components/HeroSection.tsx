@@ -4,7 +4,7 @@ import { ChevronDown, Leaf } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden bg-gradient-to-br from-emerald-50 via-green-50 to-white">
+    <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden bg-gradient-to-br from-emerald-50 via-green-50 to-white pt-20">
       {/* Animated background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -21,13 +21,26 @@ export default function HeroSection() {
           className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-8"
         >
           <Leaf className="w-4 h-4" />
-          <span>Building Nature's Future</span>
+          <span>From Seeds to Forests</span>
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="mb-6"
+        >
+          <img 
+            src="/swasia/swasia-logo.png" 
+            alt="Swasia Logo" 
+            className="h-24 md:h-32 mx-auto"
+          />
         </motion.div>
         
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="text-6xl md:text-8xl font-black text-gray-900 mb-6 tracking-tight"
         >
           Swasia
@@ -36,7 +49,7 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
           className="text-2xl md:text-3xl text-green-700 italic mb-8 font-light"
         >
           "May the nature be with you."
@@ -45,22 +58,22 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          A movement to bring nature back into our cities — starting with something 
-          as magical and simple as a treehouse.
+          Starting with simple workshops and seed collection in Indian villages, 
+          we're proving that every community can become a thriving ecosystem.
         </motion.p>
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a 
             href="#mission" 
-            className="group px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all duration-200 font-medium inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+            className="group px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-200 font-medium inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
           >
             Discover Our Mission
             <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
@@ -72,15 +85,23 @@ export default function HeroSection() {
             Join the Movement
           </a>
         </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="mt-16 flex flex-col items-center"
+        >
+          <span className="text-sm text-gray-500 mb-2">Discover More</span>
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <ChevronDown className="w-5 h-5 text-green-600" />
+          </motion.div>
+        </motion.div>
       </div>
-      
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8"
-      >
-        <ChevronDown className="w-6 h-6 text-green-600" />
-      </motion.div>
     </section>
   );
 }

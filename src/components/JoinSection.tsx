@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { Heart, Wrench, Globe, Home, Megaphone, Mail } from 'lucide-react';
 
 const ways = [
-  { icon: Heart, title: "Sponsor a treehouse", description: "Fund the construction of a Swasia treehouse in your community" },
-  { icon: Wrench, title: "Share your skills", description: "Contribute your expertise in design, technology, or education" },
-  { icon: Globe, title: "Support the mission", description: "Help us grow through donations or partnerships" },
-  { icon: Home, title: "Bring Swasia to your community", description: "Be the catalyst for change in your neighborhood" },
-  { icon: Megaphone, title: "Spread the word", description: "Share our story and help the movement grow" }
+  { icon: Heart, title: "Sponsor a village program", description: "Fund seed collection and waste management programs in rural communities" },
+  { icon: Wrench, title: "Share your skills", description: "Contribute expertise in sustainability, education, or community organizing" },
+  { icon: Globe, title: "Support the mission", description: "Help us scale through donations or partnerships with NGOs" },
+  { icon: Home, title: "Bring Swasia to your community", description: "Start seed collection and waste separation in your neighborhood" },
+  { icon: Megaphone, title: "Spread the word", description: "Share our practical approach to environmental change" }
 ];
 
 export default function JoinSection() {
@@ -35,8 +35,8 @@ export default function JoinSection() {
       
       <div className="text-center">
         <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-          We're partnering with environmental NGOs, urban planners, smart city teams, schools, and communities. 
-          Together, we're creating something that belongs to everyone — and grows with every hand that touches it.
+          We're partnering with village captains, environmental groups, schools, and local communities. 
+          Together, we're building sustainable habits that grow with every family that participates.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

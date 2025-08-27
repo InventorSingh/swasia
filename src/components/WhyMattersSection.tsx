@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { AlertTriangle, TreePine } from 'lucide-react';
 
 const facts = [
-  "Cities are getting hotter every year — heatwaves are deadly",
-  "Urban green cover is disappearing at an alarming rate",
-  "Children spend less time outdoors than prisoners",
-  "Air pollution causes millions of premature deaths annually"
+  "Villages lack practical solutions for waste management and forest restoration",
+  "Traditional knowledge about native seeds and ecosystems is being lost",
+  "Rural communities need local champions and innovative approaches",
+  "Environmental solutions work best when developed by the communities themselves"
 ];
 
 export default function WhyMattersSection() {
@@ -37,9 +37,9 @@ export default function WhyMattersSection() {
           <TreePine className="w-32 h-32" />
         </div>
         <p className="text-xl md:text-2xl leading-relaxed relative z-10">
-          Swasia's purpose is to bring nature back to where people live — 
-          and to show, with data and experience, that this isn't just good for the planet, 
-          it's essential for our health, happiness, and future.
+          Swasia bridges the gap between environmental challenges and community solutions. 
+          By empowering local champions and fostering innovation, we're proving that villages 
+          can become thriving ecosystems that inspire change everywhere.
         </p>
       </motion.div>
     </>

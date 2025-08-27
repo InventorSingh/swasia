@@ -21,9 +21,9 @@ export default function SupportSection() {
       </h3>
       
       <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-        Every cup of coffee helps fuel the vision of bringing nature back to our cities. 
-        Your support directly contributes to building treehouses that clean our air and create 
-        spaces where children can learn, play, and dream.
+        Every cup of coffee helps fuel practical environmental action in rural communities. 
+        Your support directly funds seed collection programs, waste management education, 
+        and community habits that create immediate positive impact.
       </p>
       
       <motion.a

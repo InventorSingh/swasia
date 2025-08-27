@@ -1,11 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Mission from '../components/Mission.astro';
-import HeartOfSwasia from '../components/HeartOfSwasia.astro';
 import WhatWeBuild from '../components/WhatWeBuild.astro';
 import WhyItMatters from '../components/WhyItMatters.astro';
+import VillageCaptains from '../components/VillageCaptains';
 import FirstStep from '../components/FirstStep.astro';
+import Resources from '../components/Resources';
 import Vision from '../components/Vision.astro';
 import Support from '../components/Support.astro';
 import JoinUs from '../components/JoinUs.astro';
@@ -13,12 +15,16 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Swasia - Bringing Nature Back to Cities">
+  <Header />
   <Hero />
   <Mission />
-  <HeartOfSwasia />
   <WhatWeBuild />
   <WhyItMatters />
+  <VillageCaptains client:visible />
   <FirstStep />
+  <div id="resources">
+    <Resources client:visible />
+  </div>
   <Vision />
   <Support />
   <JoinUs />
