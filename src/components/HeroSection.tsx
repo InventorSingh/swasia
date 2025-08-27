@@ -21,7 +21,7 @@ export default function HeroSection() {
           className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-8"
         >
           <Leaf className="w-4 h-4" />
-          <span>Seeds. Habits. Impact.</span>
+          <span>From Seeds to Forests</span>
         </motion.div>
         
         <motion.h1
@@ -48,8 +48,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          A grassroots movement to bring nature back into our communities — starting with something 
-          as simple and powerful as collecting seeds and changing habits.
+          Starting with simple workshops and seed collection in Indian villages, 
+          we're proving that every community can become a thriving ecosystem.
         </motion.p>
         
         <motion.div

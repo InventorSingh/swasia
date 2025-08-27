@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { AlertTriangle, TreePine } from 'lucide-react';
 
 const facts = [
-  "Rural communities struggle with waste management and environmental degradation",
-  "Native forests are disappearing while communities lack tree planting knowledge",
-  "Simple sustainable habits aren't being taught or practiced",
-  "Environmental change feels overwhelming — people need practical starting points"
+  "Villages lack practical solutions for waste management and forest restoration",
+  "Traditional knowledge about native seeds and ecosystems is being lost",
+  "Rural communities need local champions and innovative approaches",
+  "Environmental solutions work best when developed by the communities themselves"
 ];
 
 export default function WhyMattersSection() {
@@ -37,9 +37,9 @@ export default function WhyMattersSection() {
           <TreePine className="w-32 h-32" />
         </div>
         <p className="text-xl md:text-2xl leading-relaxed relative z-10">
-          Swasia's purpose is to bring practical environmental action to communities — 
-          starting with seed collection and waste separation habits that anyone can adopt. 
-          Small changes today create the forests and clean communities of tomorrow.
+          Swasia bridges the gap between environmental challenges and community solutions. 
+          By empowering local champions and fostering innovation, we're proving that villages 
+          can become thriving ecosystems that inspire change everywhere.
         </p>
       </motion.div>
     </>

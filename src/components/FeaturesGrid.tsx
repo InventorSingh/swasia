@@ -5,38 +5,38 @@ import { Sprout, Recycle, Users, Calendar, BarChart3, MapPin } from 'lucide-reac
 const features = [
   {
     icon: Sprout,
-    title: "Seed Collection",
-    description: "Gathering native seeds from local forests with seasonal guides and proper storage techniques",
+    title: "Forest Regeneration",
+    description: "Collecting and planting native seeds to restore local forests with species that naturally thrive",
     color: "text-green-600"
   },
   {
     icon: Recycle,
-    title: "Waste Separation",
-    description: "Teaching families to separate wet and dry waste with simple two-basket systems",
+    title: "Waste Innovation Labs",
+    description: "Village workshops where locals and students develop creative solutions for waste and water management",
     color: "text-blue-600"
   },
   {
     icon: Users,
-    title: "Community Walks",
-    description: "Weekly seed walks with children and monthly clean street activities",
+    title: "Village Champions",
+    description: "Training local leaders like Sattu Mama and Bulli Mama Ji to drive sustainable change in their communities",
     color: "text-purple-600"
   },
   {
     icon: Calendar,
-    title: "Habit Building",
-    description: "Simple weekly routines for village captains and families to create lasting change",
+    title: "Seasonal Programs",
+    description: "Year-round activities from monsoon seed collection to dry season tree planting and care",
     color: "text-orange-600"
   },
   {
     icon: BarChart3,
-    title: "Progress Tracking",
-    description: "Measuring families engaged, seeds planted, compost pits built, and community participation",
+    title: "Impact Tracking",
+    description: "Measuring air quality improvements, forest coverage, and community health in pilot villages",
     color: "text-indigo-600"
   },
   {
     icon: MapPin,
-    title: "Village Pilots",
-    description: "Starting with Badhana and Uchana to create replicable models for other communities",
+    title: "Scalable Model",
+    description: "Proven methods from Badhana and Uchana ready to replicate in villages across India",
     color: "text-pink-600"
   }
 ];

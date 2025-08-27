@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { MapPin, Users, Target } from 'lucide-react';
 
 const pilots = [
-  { name: "Badhana Village", captain: "Sattu Mama", focus: "Waste separation & seed collection" },
-  { name: "Uchana Town", captain: "Bulli Mama Ji", focus: "Community composting & greening" }
+  { name: "Badhana Village", captain: "Sattu Mama", focus: "Innovation lab for waste solutions & seed collection" },
+  { name: "Uchana Town", captain: "Bulli Mama Ji", focus: "Student-led environmental projects & forest restoration" }
 ];
 
 export default function FirstStepContent() {
@@ -23,7 +23,7 @@ export default function FirstStepContent() {
           </div>
           <h3 className="text-2xl font-semibold mb-4">Haryana, India</h3>
           <p className="text-gray-600 mb-6">
-            Our first pilot projects focus on immediate, practical change:
+            Our pilot villages are becoming living laboratories for sustainable innovation:
           </p>
           <ul className="space-y-4 mb-6">
             {pilots.map((pilot, index) => (
@@ -44,8 +44,8 @@ export default function FirstStepContent() {
             ))}
           </ul>
           <p className="text-gray-600">
-            3-month plans covering awareness, composting, and community greening — 
-            creating replicable models for sustainable village transformation.
+            Local leaders working with students to create innovative waste solutions, 
+            collect native seeds, and build sustainable systems that other villages can replicate.
           </p>
         </div>
         <div className="md:w-1/2 bg-gradient-to-br from-green-100 to-emerald-100 p-8 md:p-12 flex items-center justify-center">
@@ -55,10 +55,10 @@ export default function FirstStepContent() {
               Tracking Real Impact
             </p>
             <ul className="text-sm text-green-700 space-y-2">
-              <li>• Families separating waste</li>
-              <li>• Seeds collected & planted</li>
-              <li>• Compost pits built</li>
-              <li>• Community engagement</li>
+              <li>• Villages with cleaner air & water</li>
+              <li>• Innovative waste solutions developed</li>
+              <li>• Native forests regenerated</li>
+              <li>• Models ready for scaling</li>
             </ul>
           </div>
         </div>
