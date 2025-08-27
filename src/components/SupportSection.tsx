@@ -5,10 +5,9 @@ import { Coffee, Heart } from 'lucide-react';
 export default function SupportSection() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, margin: "-100px" }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
       className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 md:p-12 text-center border border-yellow-200"
     >
       <div className="flex justify-center mb-6">

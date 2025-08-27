@@ -60,7 +60,7 @@ export default function HeroSection() {
         >
           <a 
             href="#mission" 
-            className="group px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all duration-200 font-medium inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+            className="group px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-200 font-medium inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
           >
             Discover Our Mission
             <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />

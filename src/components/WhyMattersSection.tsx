@@ -16,10 +16,9 @@ export default function WhyMattersSection() {
         {facts.map((fact, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-            viewport={{ once: true, margin: "-50px" }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="flex items-start bg-red-50 p-4 rounded-lg border border-red-100"
           >
             <AlertTriangle className="w-5 h-5 text-red-600 mr-3 flex-shrink-0 mt-0.5" />
@@ -29,10 +28,9 @@ export default function WhyMattersSection() {
       </div>
       
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-        viewport={{ once: true, margin: "-100px" }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
         className="relative bg-gradient-to-br from-green-600 to-green-700 text-white rounded-2xl p-8 md:p-12 text-center overflow-hidden"
       >
         <div className="absolute top-4 right-4 opacity-10">

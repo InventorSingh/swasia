@@ -49,22 +49,15 @@ export default function FeaturesGrid() {
         return (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-            viewport={{ once: true, margin: "-50px" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+            className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-green-200"
           >
-            <motion.div 
-              initial={{ scale: 0.8 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 0.4, delay: index * 0.1 + 0.2 }}
-              viewport={{ once: true }}
-              className={`inline-flex p-3 rounded-lg bg-gray-50 ${feature.color} mb-4`}
-            >
+            <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 ${feature.color} mb-4 shadow-sm`}>
               <Icon className="w-6 h-6" />
-            </motion.div>
+            </div>
             <h3 className="text-xl font-semibold mb-3 text-gray-900">{feature.title}</h3>
             <p className="text-gray-600 leading-relaxed">{feature.description}</p>
           </motion.div>
