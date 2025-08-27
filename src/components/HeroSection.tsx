@@ -4,7 +4,7 @@ import { ChevronDown, Leaf } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden bg-gradient-to-br from-emerald-50 via-green-50 to-white">
+    <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden bg-gradient-to-br from-emerald-50 via-green-50 to-white pt-20">
       {/* Animated background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -24,10 +24,23 @@ export default function HeroSection() {
           <span>From Seeds to Forests</span>
         </motion.div>
         
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="mb-6"
+        >
+          <img 
+            src="/swasia/swasia-logo.png" 
+            alt="Swasia Logo" 
+            className="h-24 md:h-32 mx-auto"
+          />
+        </motion.div>
+        
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="text-6xl md:text-8xl font-black text-gray-900 mb-6 tracking-tight"
         >
           Swasia
@@ -36,7 +49,7 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
           className="text-2xl md:text-3xl text-green-700 italic mb-8 font-light"
         >
           "May the nature be with you."
@@ -45,7 +58,7 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed"
         >
           Starting with simple workshops and seed collection in Indian villages, 
@@ -55,7 +68,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a 
