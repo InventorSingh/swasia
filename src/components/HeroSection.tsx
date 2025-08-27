@@ -85,15 +85,23 @@ export default function HeroSection() {
             Join the Movement
           </a>
         </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="mt-16 flex flex-col items-center"
+        >
+          <span className="text-sm text-gray-500 mb-2">Discover More</span>
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <ChevronDown className="w-5 h-5 text-green-600" />
+          </motion.div>
+        </motion.div>
       </div>
-      
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8"
-      >
-        <ChevronDown className="w-6 h-6 text-green-600" />
-      </motion.div>
     </section>
   );
 }
