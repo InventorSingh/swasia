@@ -10,7 +10,7 @@ const captains = [
     description: "Leading waste management innovation and seed collection programs in Badhana"
   },
   {
-    name: "Paradeep Khatkar", 
+    name: "Pardeep Khatkar", 
     village: "Uchana Town",
     role: "Community Catalyst",
     description: "Organizing student-led environmental projects and forest restoration initiatives"

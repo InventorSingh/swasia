@@ -18,7 +18,7 @@ const features = [
   {
     icon: Users,
     title: "Village Champions",
-    description: "Local leaders like Sattu Khatkar (Badhana) and Paradeep Khatkar (Uchana) driving sustainable change",
+    description: "Local leaders like Sattu Khatkar (Badhana) and Pardeep Khatkar (Uchana) driving sustainable change",
     color: "text-purple-600"
   },
   {

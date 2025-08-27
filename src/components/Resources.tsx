@@ -21,7 +21,7 @@ const resources = [
   },
   {
     title: "Uchana Town Project Guide",
-    description: "Comprehensive poster for the Uchana town pilot project with Paradeep Khatkar",
+    description: "Comprehensive poster for the Uchana town pilot project with Pardeep Khatkar",
     filename: "Swasia_Uchana_Poster.pdf",
     icon: MapPin,
     color: "text-purple-600", 

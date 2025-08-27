@@ -4,7 +4,7 @@ import { MapPin, Users, Target } from 'lucide-react';
 
 const pilots = [
   { name: "Badhana Village", captain: "Sattu Khatkar", focus: "Innovation lab for waste solutions & seed collection" },
-  { name: "Uchana Town", captain: "Paradeep Khatkar", focus: "Student-led environmental projects & forest restoration" }
+  { name: "Uchana Town", captain: "Pardeep Khatkar", focus: "Student-led environmental projects & forest restoration" }
 ];
 
 export default function FirstStepContent() {
@@ -46,7 +46,7 @@ export default function FirstStepContent() {
             ))}
           </ul>
           <p className="text-gray-600">
-            Local leaders Sattu Khatkar and Paradeep Khatkar working with students to create innovative waste solutions, 
+            Local leaders Sattu Khatkar and Pardeep Khatkar working with students to create innovative waste solutions, 
             collect native seeds, and build sustainable systems that other villages can replicate.
           </p>
         </div>
