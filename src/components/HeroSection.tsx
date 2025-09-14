@@ -21,7 +21,7 @@ export default function HeroSection() {
           className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-8"
         >
           <Leaf className="w-4 h-4" />
-          <span>From Seeds to Forests</span>
+          <span>Building Living Communities</span>
         </motion.div>
         
         <motion.div
@@ -61,8 +61,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          Starting with simple workshops and seed collection in Indian villages, 
-          we're proving that every community can become a thriving ecosystem.
+          Transforming villages and towns into thriving living ecosystems that provide fresh food, 
+          clean air, and healthier lives for families — while supporting local wildlife and nature.
         </motion.p>
         
         <motion.div
@@ -75,14 +75,14 @@ export default function HeroSection() {
             href="#mission" 
             className="group px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-200 font-medium inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
           >
-            Discover Our Mission
+            See Our Impact
             <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
           </a>
           <a 
             href="#join" 
             className="px-8 py-4 border-2 border-green-600 text-green-700 rounded-full hover:bg-green-50 transition-all duration-200 font-medium hover:border-green-700"
           >
-            Join the Movement
+            Transform Your Community
           </a>
         </motion.div>
 

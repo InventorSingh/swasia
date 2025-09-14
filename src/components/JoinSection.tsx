@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Wrench, Globe, Home, Megaphone, Mail } from 'lucide-react';
+import { Home, Users, Sprout, Heart, Trophy, Mail } from 'lucide-react';
 
 const ways = [
-  { icon: Heart, title: "Sponsor a village program", description: "Fund seed collection and waste management programs in rural communities" },
-  { icon: Wrench, title: "Share your skills", description: "Contribute expertise in sustainability, education, or community organizing" },
-  { icon: Globe, title: "Support the mission", description: "Help us scale through donations or partnerships with NGOs" },
-  { icon: Home, title: "Bring Swasia to your community", description: "Start seed collection and waste separation in your neighborhood" },
-  { icon: Megaphone, title: "Spread the word", description: "Share our practical approach to environmental change" }
+  { icon: Home, title: "Start in Your Community", description: "Begin food gardens and tree planting in your neighborhood for healthier living" },
+  { icon: Users, title: "Bring Families Together", description: "Organize community efforts to create shared spaces that benefit everyone" },
+  { icon: Sprout, title: "Grow Food & Medicine", description: "Learn to cultivate plants that feed your family and support local wildlife" },
+  { icon: Heart, title: "Create Wellness Spaces", description: "Build areas where children play safely and families connect with nature" },
+  { icon: Trophy, title: "Excellence Recognition", description: "Apply for awards that celebrate successful community transformations" }
 ];
 
 export default function JoinSection() {
@@ -35,8 +35,8 @@ export default function JoinSection() {
       
       <div className="text-center">
         <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-          We're partnering with village captains, environmental groups, schools, and local communities. 
-          Together, we're building sustainable habits that grow with every family that participates.
+          Join communities already transforming into living ecosystems. Whether you're starting small 
+          in your backyard or organizing your entire neighborhood, every step creates healthier lives for families.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -47,7 +47,7 @@ export default function JoinSection() {
             className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors font-medium shadow-lg hover:shadow-xl"
           >
             <Mail className="w-5 h-5" />
-            Email Us
+            Start Your Transformation
           </motion.a>
           
           <motion.a

@@ -6,14 +6,14 @@ const captains = [
   {
     name: "Sattu Khatkar",
     village: "Badhana Village",
-    role: "Innovation Leader",
-    description: "Leading waste management innovation and seed collection programs in Badhana"
+    role: "Community Transformation Leader",
+    description: "Leading Badhana's transformation into a living ecosystem with food gardens, clean air initiatives, and waste-to-resource programs"
   },
   {
     name: "Pardeep Khatkar", 
     village: "Uchana Town",
-    role: "Community Catalyst",
-    description: "Organizing student-led environmental projects and forest restoration initiatives"
+    role: "Youth & Family Coordinator",
+    description: "Organizing families in Uchana to create healthier neighborhoods through community gardens and natural living spaces"
   }
 ];
 
@@ -28,7 +28,7 @@ export default function VillageCaptains() {
             transition={{ duration: 0.8 }}
             className="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-gray-900 to-green-800 bg-clip-text text-transparent"
           >
-            Our Village Captains
+            Community Leaders
           </motion.h2>
           
           <motion.p
@@ -37,7 +37,7 @@ export default function VillageCaptains() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-lg text-gray-600 mb-12"
           >
-            Local champions leading the transformation in their communities
+            Local champions transforming their communities into thriving living ecosystems
           </motion.p>
 
           <div className="grid md:grid-cols-2 gap-8">

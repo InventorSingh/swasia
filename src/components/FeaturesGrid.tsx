@@ -1,42 +1,42 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sprout, Recycle, Users, Calendar, BarChart3, MapPin } from 'lucide-react';
+import { Sprout, Home, Heart, Recycle, Users, Trophy } from 'lucide-react';
 
 const features = [
   {
     icon: Sprout,
-    title: "Forest Regeneration",
-    description: "Collecting and planting native seeds to restore local forests with species that naturally thrive",
+    title: "Food & Medicine Gardens",
+    description: "Helping families grow nutritious food and medicinal plants that improve health and reduce grocery costs",
     color: "text-green-600"
   },
   {
-    icon: Recycle,
-    title: "Waste Innovation Labs",
-    description: "Village workshops where locals and students develop creative solutions for waste and water management",
+    icon: Home,
+    title: "Clean Air Spaces",
+    description: "Creating tree-rich neighborhoods that provide shade, fresh air, and natural cooling for healthier living",
     color: "text-blue-600"
   },
   {
-    icon: Users,
-    title: "Village Champions",
-    description: "Local leaders like Sattu Khatkar (Badhana) and Pardeep Khatkar (Uchana) driving sustainable change",
+    icon: Heart,
+    title: "Community Wellbeing",
+    description: "Building spaces where children play safely, families gather, and mental health improves through nature connection",
     color: "text-purple-600"
   },
   {
-    icon: Calendar,
-    title: "Seasonal Programs",
-    description: "Year-round activities from monsoon seed collection to dry season tree planting and care",
+    icon: Recycle,
+    title: "Waste to Resources",
+    description: "Teaching communities to turn organic waste into compost and fertilizer that feeds their gardens",
     color: "text-orange-600"
   },
   {
-    icon: BarChart3,
-    title: "Impact Tracking",
-    description: "Measuring air quality improvements, forest coverage, and community health in pilot villages",
+    icon: Users,
+    title: "Local Leadership",
+    description: "Training community members to become self-sufficient in maintaining and expanding their living ecosystems",
     color: "text-indigo-600"
   },
   {
-    icon: MapPin,
-    title: "Scalable Model",
-    description: "Proven methods from Badhana and Uchana ready to replicate in villages across India",
+    icon: Trophy,
+    title: "Excellence Awards",
+    description: "Recognizing and encouraging families and communities who excel at creating these transformations",
     color: "text-pink-600"
   }
 ];
