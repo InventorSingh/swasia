@@ -1,5 +1,7 @@
 ---
 import HeroSection from './HeroSection';
+
+const { locale = 'hi' } = Astro.props;
 ---
 
-<HeroSection client:load />
+<HeroSection locale={locale} client:load />

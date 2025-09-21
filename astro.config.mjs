@@ -10,6 +10,13 @@ export default defineConfig({
     assets: 'assets'
   },
   output: 'static',
+  i18n: {
+    defaultLocale: 'hi',
+    locales: ['hi', 'en'],
+    routing: {
+      prefixDefaultLocale: false
+    }
+  },
   integrations: [
     tailwind(),
     react()

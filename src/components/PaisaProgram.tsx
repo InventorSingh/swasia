@@ -1,38 +1,44 @@
 import React from 'react';
 import { Coins, TrendingUp, Heart } from 'lucide-react';
+import { useTranslation } from '../utils/translations';
 
-const paisaComponents = [
-  {
-    icon: Coins,
-    title: "Earning",
-    description: "Encouraging creativity, skills, and small entrepreneurship",
-    color: "text-yellow-700"
-  },
-  {
-    icon: TrendingUp,
-    title: "Using", 
-    description: "Understanding savings, investment, and generosity",
-    color: "text-red-700"
-  },
-  {
-    icon: Heart,
-    title: "Raising",
-    description: "Learning to raise money responsibly with guidance from mentors",
-    color: "text-orange-700"
-  }
-];
+interface PaisaProgramProps {
+  locale?: 'en' | 'hi';
+}
 
-export default function PaisaProgram() {
+export default function PaisaProgram({ locale = 'hi' }: PaisaProgramProps) {
+  const { t } = useTranslation(locale);
+
+  const paisaComponents = [
+    {
+      icon: Coins,
+      title: t('earningTitle'),
+      description: t('earningDesc'),
+      color: "text-yellow-700"
+    },
+    {
+      icon: TrendingUp,
+      title: t('usingTitle'), 
+      description: t('usingDesc'),
+      color: "text-red-700"
+    },
+    {
+      icon: Heart,
+      title: t('raisingTitle'),
+      description: t('raisingDesc'),
+      color: "text-orange-700"
+    }
+  ];
+
   return (
     <section id="paisa-section" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-red-800 mb-6">
-            Foundation Course: Paisa
+            {t('paisaProgramTitle')}
           </h2>
           <p className="text-xl text-red-700 max-w-3xl mx-auto">
-            More than money — Paisa becomes a medium of positive change, sparking innovation 
-            in the next generation and laying the foundation for resilient communities.
+            {t('paisaProgramDesc')}
           </p>
         </div>
 
@@ -71,12 +77,10 @@ export default function PaisaProgram() {
             />
           </div>
           <h3 className="text-3xl font-bold text-red-800 mb-6">
-            Gamified Learning
+            {t('gamifiedLearningTitle')}
           </h3>
           <p className="text-lg text-red-700 max-w-3xl mx-auto leading-relaxed">
-            Children learn through engaging, game-like activities that make financial education 
-            fun and culturally rooted. They collaborate, set goals, and build resilience through 
-            practice and shared community values.
+            {t('gamifiedLearningDesc')}
           </p>
         </div>
       </div>

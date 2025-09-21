@@ -1,31 +1,38 @@
 import React from 'react';
 import { Award, Trophy, Star } from 'lucide-react';
+import { useTranslation } from '../utils/translations';
 
-const certificationLevels = [
-  {
-    level: "Bronze",
-    title: "Paisa Basics",
-    description: "Understanding money fundamentals and basic earning skills",
-    color: "text-orange-700",
-    medalColor: "from-orange-400 to-yellow-500"
-  },
-  {
-    level: "Silver", 
-    title: "Smart Management",
-    description: "Mastering savings, budgeting, and investment principles",
-    color: "text-gray-700",
-    medalColor: "from-gray-300 to-gray-400"
-  },
-  {
-    level: "Gold",
-    title: "Community Leader",
-    description: "Leading projects that benefit others and raise funds responsibly",
-    color: "text-yellow-700",
-    medalColor: "from-yellow-400 to-amber-500"
-  }
-];
+interface AwardsProgramProps {
+  locale?: 'en' | 'hi';
+}
 
-export default function AwardsProgram() {
+export default function AwardsProgram({ locale = 'hi' }: AwardsProgramProps) {
+  const { t } = useTranslation(locale);
+
+  const certificationLevels = [
+    {
+      level: t('bronzeLevel'),
+      title: t('paisaBasics'),
+      description: t('bronzeDesc'),
+      color: "text-orange-700",
+      medalColor: "from-orange-400 to-yellow-500"
+    },
+    {
+      level: t('silverLevel'), 
+      title: t('smartManagement'),
+      description: t('silverDesc'),
+      color: "text-gray-700",
+      medalColor: "from-gray-300 to-gray-400"
+    },
+    {
+      level: t('goldLevel'),
+      title: t('communityLeader'),
+      description: t('goldDesc'),
+      color: "text-yellow-700",
+      medalColor: "from-yellow-400 to-amber-500"
+    }
+  ];
+
   return (
     <section id="awards-section" className="py-20 bg-gradient-to-br from-yellow-50 to-orange-50">
       <div className="max-w-6xl mx-auto px-6">
@@ -40,11 +47,11 @@ export default function AwardsProgram() {
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-red-800 mb-6">
-            SWASIA AWARDS
+            {t('awardsTitle')}
           </h2>
           
           <p className="text-xl text-red-700 max-w-3xl mx-auto">
-            Children earn certificates as they master skills and help their communities grow.
+            {t('awardsDesc')}
           </p>
         </div>
 
@@ -61,7 +68,7 @@ export default function AwardsProgram() {
                 </div>
                 
                 <div className={`inline-block px-6 py-2 rounded-full text-lg font-bold mb-4 ${cert.color} bg-yellow-100 border-2 border-red-700`}>
-                  {cert.level} Level
+                  {cert.level}
                 </div>
                 
                 <h3 className="text-2xl font-bold text-red-800 mb-4">
@@ -85,17 +92,16 @@ export default function AwardsProgram() {
           </div>
           
           <h3 className="text-3xl font-bold text-red-800 mb-6">
-            Building Tomorrow's Leaders
+            {t('buildingLeadersTitle')}
           </h3>
           
           <p className="text-xl text-red-700 max-w-4xl mx-auto leading-relaxed">
-            Through hands-on learning and community connection, children develop confidence, 
-            skills, and the wisdom to create positive change in their villages.
+            {t('buildingLeadersDesc')}
           </p>
           
           <div className="mt-8">
             <p className="text-red-800 font-semibold">
-              — Gurprit Singh, Sponsor —
+              {t('sponsorName')}
             </p>
           </div>
         </div>

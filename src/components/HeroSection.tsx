@@ -1,9 +1,18 @@
 import React from 'react';
 import { Award } from 'lucide-react';
+import { useTranslation } from '../utils/translations';
+import LanguageSwitcher from './LanguageSwitcher';
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  locale?: 'en' | 'hi';
+}
+
+export default function HeroSection({ locale = 'hi' }: HeroSectionProps) {
+  const { t } = useTranslation(locale);
+
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
+    <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 relative">
+      <LanguageSwitcher currentLocale={locale} />
       
       <div className="max-w-4xl mx-auto text-center px-6">
         {/* Logo - Full Circle */}
@@ -17,29 +26,27 @@ export default function HeroSection() {
         
         {/* Main Title */}
         <h1 className="text-6xl md:text-7xl font-bold text-red-800 mb-8 tracking-wide">
-          SWASIA
+          {t('heroTitle')}
         </h1>
         
         {/* Vision Quote */}
         <blockquote className="text-xl md:text-2xl text-red-800 italic mb-8 max-w-3xl mx-auto">
-          "Building the future together, one child at a time."
+          "{t('heroQuote')}"
         </blockquote>
         
         {/* Mission Statement */}
         <p className="text-lg text-red-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Empowering children with practical skills that create opportunities 
-          and strengthen communities.
+          {t('heroMission')}
         </p>
         
         {/* Paisa Course Highlight - Simplified */}
         <div className="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-8 shadow-lg border-2 border-red-800 mb-8 max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Award className="w-6 h-6 text-red-700" />
-            <h3 className="text-2xl font-bold text-red-800">Foundation Course: Paisa</h3>
+            <h3 className="text-2xl font-bold text-red-800">{t('paisaCourseTitle')}</h3>
           </div>
           <p className="text-red-700">
-            Teaching children practical money skills that build confidence, 
-            create opportunities, and strengthen villages.
+            {t('paisaCourseDesc')}
           </p>
         </div>
         
@@ -49,13 +56,13 @@ export default function HeroSection() {
             onClick={() => document.getElementById('paisa-section')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg"
           >
-            Learn About Paisa
+            {t('learnPaisaBtn')}
           </button>
           <button 
             onClick={() => document.getElementById('awards-section')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 border-2 border-red-800 text-red-800 rounded-full hover:bg-red-50 transition-all duration-200 font-medium"
           >
-            View Awards Program
+            {t('viewAwardsBtn')}
           </button>
         </div>
       </div>

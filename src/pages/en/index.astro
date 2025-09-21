@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import PaisaProgram from '../../components/PaisaProgram';
+import AwardsProgram from '../../components/AwardsProgram';
+import SupportSwasia from '../../components/SupportSwasia';
+import ContactSection from '../../components/ContactSection';
+---
+
+<Layout title="Swasia - Building Resilient Futures">
+  <Hero locale="en" />
+  <PaisaProgram locale="en" client:visible />
+  <AwardsProgram locale="en" client:visible />
+  <SupportSwasia locale="en" client:visible />
+  <ContactSection locale="en" client:visible />
+</Layout>
