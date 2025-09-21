@@ -1,4 +1,4 @@
-import{c}from"./translations.CZMRbY0w.js";/**
+import{c}from"./translations.BooAUt0_.js";/**
  * @license lucide-react v0.400.0 - ISC
  *
  * This source code is licensed under the ISC license.

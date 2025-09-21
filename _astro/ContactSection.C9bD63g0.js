@@ -1,4 +1,4 @@
-import{c as l,j as e,u as o}from"./translations.CZMRbY0w.js";import"./index.CVf8TyFT.js";/**
+import{c as l,j as e,u as o}from"./translations.BooAUt0_.js";import"./index.CVf8TyFT.js";/**
  * @license lucide-react v0.400.0 - ISC
  *
  * This source code is licensed under the ISC license.

@@ -1,4 +1,4 @@
-import{c as r,u as n,j as e}from"./translations.CZMRbY0w.js";import{H as d}from"./heart.BGdMDgBA.js";import"./index.CVf8TyFT.js";/**
+import{c as r,u as n,j as e}from"./translations.BooAUt0_.js";import{H as d}from"./heart.DGXAYG2v.js";import"./index.CVf8TyFT.js";/**
  * @license lucide-react v0.400.0 - ISC
  *
  * This source code is licensed under the ISC license.
