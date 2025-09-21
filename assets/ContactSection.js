@@ -4,7 +4,7 @@ import 'html-escaper';
 import 'clsx';
 /* empty css         */
 import { jsx, jsxs } from 'react/jsx-runtime';
-import { Globe, Award, Coins, TrendingUp, Heart, Star, Coffee, Mail, Phone, MapPin } from 'lucide-react';
+import { Globe, Award, Sprout, Droplets, Package, Users, Star, Coffee, Heart, Mail, Phone, MapPin } from 'lucide-react';
 
 const $$Astro$1 = createAstro("https://inventorsingh.github.io");
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
@@ -20,10 +20,45 @@ const translations = {
     heroTitle: "SWASIA",
     heroQuote: "Building the future together, one child at a time.",
     heroMission: "Empowering children with practical skills that create opportunities and strengthen communities.",
-    paisaCourseTitle: "Foundation Course: Paisa",
-    paisaCourseDesc: "Teaching children practical money skills that build confidence, create opportunities, and strengthen villages.",
-    learnPaisaBtn: "Learn About Paisa",
+    foundationCourseTitle: "Foundation Course: Grow with Nature",
+    foundationCourseDesc: "Ages 6-12 learn agriculture, entrepreneurship, and sustainability through hands-on experience from seeds to harvest.",
+    learnMoreBtn: "Learn More",
     viewAwardsBtn: "View Awards Program",
+    // Nature Course
+    natureCourseTitle: "Foundation Course: Grow with Nature",
+    natureCourseSubtitle: "Target Students: Ages 6–12 | Duration: 4 Weeks (Pilot Program) | Locations: Village Plots, Showrooms in Uchana & Narwana",
+    courseBasics: "At Swasia, we believe learning is best when hands, hearts, and minds work together with nature.",
+    courseOverviewTitle: "4-Week Course Journey",
+    week1Title: "Week 1",
+    week1Theme: "Meet the Land",
+    week1Activities: "Soil exploration, composting, planting fast-growing seeds, making plant labels",
+    week2Title: "Week 2",
+    week2Theme: "Water & Care",
+    week2Activities: "Watering techniques, indoor planting, building mini water-saving systems",
+    week3Title: "Week 3",
+    week3Theme: "Harvest & Make",
+    week3Activities: "Harvesting greens/herbs, drying, grinding, packaging for sale",
+    week4Title: "Week 4",
+    week4Theme: "Share & Reflect",
+    week4Activities: "Mini-market setup, showcase products, reflection, feedback",
+    dailyScheduleTitle: "Daily Schedule (3 Hours)",
+    morningCircle: "Morning Circle (15 min)",
+    morningCircleDesc: "Share observations and nature stories",
+    handsInSoil: "Hands in Soil (30-45 min)",
+    handsInSoilDesc: "Plant, water, and care for plots",
+    creativeHour: "Creative Hour (30 min)",
+    creativeHourDesc: "Eco-products, labels, or crafts",
+    reflectionJournal: "Reflection Journal (15-30 min)",
+    reflectionJournalDesc: "Note observations and ideas",
+    miniWorkshops: "Mini Workshops / Market",
+    miniWorkshopsDesc: "Sell or showcase products (as scheduled)",
+    whySwasiaWorksTitle: "Why Swasia Works",
+    learningByDoing: "Learning by Doing",
+    learningByDoingDesc: "Combines theoretical knowledge with practical hands-on experience",
+    realWorldOutputs: "Real-World Outputs",
+    realWorldOutputsDesc: "Produces actual food, eco-products that students can sell and use",
+    sustainableVision: "Sustainable Vision",
+    sustainableVisionDesc: "Instills long-term thinking for resilient ecosystems and communities",
     // Paisa Program
     paisaProgramTitle: "Foundation Course: Paisa",
     paisaProgramDesc: "More than money — Paisa becomes a medium of positive change, sparking innovation in the next generation and laying the foundation for resilient communities.",
@@ -36,17 +71,17 @@ const translations = {
     gamifiedLearningTitle: "Gamified Learning",
     gamifiedLearningDesc: "Children learn through engaging, game-like activities that make financial education fun and culturally rooted. They collaborate, set goals, and build resilience through practice and shared community values.",
     // Awards Program
-    awardsTitle: "SWASIA AWARDS",
-    awardsDesc: "Children earn certificates as they master skills and help their communities grow.",
+    awardsTitle: "SWASIA NATURE AWARDS",
+    awardsDesc: "Children earn certificates as they master agricultural skills and help their communities grow.",
     bronzeLevel: "Bronze Level",
     silverLevel: "Silver Level",
     goldLevel: "Gold Level",
-    paisaBasics: "Paisa Basics",
-    smartManagement: "Smart Management",
-    communityLeader: "Community Leader",
-    bronzeDesc: "Understanding money fundamentals and basic earning skills",
-    silverDesc: "Mastering savings, budgeting, and investment principles",
-    goldDesc: "Leading projects that benefit others and raise funds responsibly",
+    paisaBasics: "Nature Explorer",
+    smartManagement: "Garden Guardian",
+    communityLeader: "Eco Entrepreneur",
+    bronzeDesc: "Understanding soil, seeds, and basic plant care fundamentals",
+    silverDesc: "Mastering composting, water conservation, and sustainable growing",
+    goldDesc: "Leading projects that create eco-products and support community gardens",
     buildingLeadersTitle: "Building Tomorrow's Leaders",
     buildingLeadersDesc: "Through hands-on learning and community connection, children develop confidence, skills, and the wisdom to create positive change in their villages.",
     sponsorName: "— Gurprit Singh, Sponsor —",
@@ -72,10 +107,45 @@ const translations = {
     heroTitle: "स्वासिया",
     heroQuote: "आज का बचपन, कल का समृद्ध भारत।",
     heroMission: "बच्चों को व्यावहारिक कौशल के साथ सशक्त बनाना जो अवसर पैदा करते हैं और समुदायों को मजबूत बनाते हैं।",
-    paisaCourseTitle: "आधारभूत पाठ्यक्रम: पैसा",
-    paisaCourseDesc: "बच्चों को व्यावहारिक पैसे के कौशल सिखाना जो आत्मविश्वास बढ़ाते हैं, अवसर पैदा करते हैं, और गांवों को मजबूत बनाते हैं।",
-    learnPaisaBtn: "पैसे के बारे में जानें",
+    foundationCourseTitle: "आधारभूत पाठ्यक्रम: प्रकृति के साथ बढ़ना",
+    foundationCourseDesc: "6-12 साल के बच्चे बीज से फसल तक के व्यावहारिक अनुभव के माध्यम से कृषि, उद्यमिता और स्थिरता सीखते हैं।",
+    learnMoreBtn: "और जानें",
     viewAwardsBtn: "पुरस्कार कार्यक्रम देखें",
+    // Nature Course
+    natureCourseTitle: "आधारभूत पाठ्यक्रम: प्रकृति के साथ बढ़ना",
+    natureCourseSubtitle: "लक्षित छात्र: 6–12 साल | अवधि: 4 सप्ताह (पायलट कार्यक्रम) | स्थान: गांव के खेत, उचाना और नरवाना में शोरूम",
+    courseBasics: "स्वासिया में, हमारा मानना है कि सीखना तब सबसे अच्छा होता है जब हाथ, दिल और दिमाग प्रकृति के साथ मिलकर काम करते हैं।",
+    courseOverviewTitle: "4 सप्ताह की कोर्स यात्रा",
+    week1Title: "सप्ताह 1",
+    week1Theme: "भूमि से मुलाकात",
+    week1Activities: "मिट्टी की खोज, कंपोस्टिंग, तेजी से उगने वाले बीज बोना, पौधों के लेबल बनाना",
+    week2Title: "सप्ताह 2",
+    week2Theme: "पानी और देखभाल",
+    week2Activities: "पानी देने की तकनीक, इनडोर रोपण, मिनी जल संरक्षण सिस्टम बनाना",
+    week3Title: "सप्ताह 3",
+    week3Theme: "फसल और निर्माण",
+    week3Activities: "साग/जड़ी-बूटियों की कटाई, सुखाना, पीसना, बिक्री के लिए पैकेजिंग",
+    week4Title: "सप्ताह 4",
+    week4Theme: "साझा करना और चिंतन",
+    week4Activities: "मिनी-मार्केट सेटअप, उत्पादों का प्रदर्शन, चिंतन, फीडबैक",
+    dailyScheduleTitle: "दैनिक कार्यक्रम (3 घंटे)",
+    morningCircle: "मॉर्निंग सर्कल (15 मिनट)",
+    morningCircleDesc: "अवलोकन और प्रकृति की कहानियां साझा करना",
+    handsInSoil: "मिट्टी में हाथ (30-45 मिनट)",
+    handsInSoilDesc: "खेतों में पौधे लगाना, पानी देना और देखभाल करना",
+    creativeHour: "रचनात्मक घंटा (30 मिनट)",
+    creativeHourDesc: "इको-प्रोडक्ट्स, लेबल या शिल्प कार्य",
+    reflectionJournal: "चिंतन डायरी (15-30 मिनट)",
+    reflectionJournalDesc: "अवलोकन और विचारों को नोट करना",
+    miniWorkshops: "मिनी वर्कशॉप / मार्केट",
+    miniWorkshopsDesc: "उत्पादों को बेचना या प्रदर्शित करना (निर्धारित समय के अनुसार)",
+    whySwasiaWorksTitle: "स्वासिया क्यों काम करता है",
+    learningByDoing: "करके सीखना",
+    learningByDoingDesc: "सैद्धांतिक ज्ञान को व्यावहारिक अनुभव के साथ जोड़ता है",
+    realWorldOutputs: "वास्तविक दुनिया के परिणाम",
+    realWorldOutputsDesc: "वास्तविक भोजन, इको-प्रोडक्ट्स का उत्पादन जिन्हें छात्र बेच और उपयोग कर सकते हैं",
+    sustainableVision: "टिकाऊ दृष्टिकोण",
+    sustainableVisionDesc: "लचीले पारिस्थितिकी तंत्र और समुदायों के लिए दीर्घकालिक सोच पैदा करता है",
     // Paisa Program
     paisaProgramTitle: "आधारभूत पाठ्यक्रम: पैसा",
     paisaProgramDesc: "सिर्फ पैसे से कहीं अधिक — पैसा सकारात्मक बदलाव का माध्यम बनता है, अगली पीढ़ी में नवाचार को प्रेरित करता है और लचीले समुदायों की नींव रखता है।",
@@ -88,17 +158,17 @@ const translations = {
     gamifiedLearningTitle: "गेमिफाइड लर्निंग",
     gamifiedLearningDesc: "बच्चे आकर्षक, खेल-जैसी गतिविधियों के माध्यम से सीखते हैं जो वित्तीय शिक्षा को मजेदार और सांस्कृतिक रूप से जुड़ी बनाती हैं। वे सहयोग करते हैं, लक्ष्य निर्धारित करते हैं, और अभ्यास और साझा सामुदायिक मूल्यों के माध्यम से लचीलापन बनाते हैं।",
     // Awards Program
-    awardsTitle: "स्वासिया पुरस्कार",
-    awardsDesc: "बच्चे कौशल में महारत हासिल करने और अपने समुदायों की वृद्धि में मदद करने पर प्रमाण पत्र अर्जित करते हैं।",
+    awardsTitle: "स्वासिया प्रकृति पुरस्कार",
+    awardsDesc: "बच्चे कृषि कौशल में महारत हासिल करने और अपने समुदायों की वृद्धि में मदद करने पर प्रमाण पत्र अर्जित करते हैं।",
     bronzeLevel: "कांस्य स्तर",
     silverLevel: "रजत स्तर",
     goldLevel: "स्वर्ण स्तर",
-    paisaBasics: "पैसे की मूल बातें",
-    smartManagement: "स्मार्ट प्रबंधन",
-    communityLeader: "समुदायिक नेता",
-    bronzeDesc: "पैसे की मूलभूत समझ और बुनियादी कमाई के कौशल",
-    silverDesc: "बचत, बजट और निवेश के सिद्धांतों में महारत",
-    goldDesc: "ऐसी परियोजनाओं का नेतृत्व करना जो दूसरों को लाभ पहुंचाती हैं और जिम्मेदारी से फंड जुटाती हैं",
+    paisaBasics: "प्रकृति खोजकर्ता",
+    smartManagement: "बगीचा संरक्षक",
+    communityLeader: "इको उद्यमी",
+    bronzeDesc: "मिट्टी, बीज और बुनियादी पौधों की देखभाल की समझ",
+    silverDesc: "कंपोस्टिंग, जल संरक्षण और टिकाऊ खेती में महारत",
+    goldDesc: "ऐसी परियोजनाओं का नेतृत्व करना जो इको-प्रोडक्ट्स बनाती हैं और सामुदायिक बगीचों का समर्थन करती हैं",
     buildingLeadersTitle: "कल के नेताओं का निर्माण",
     buildingLeadersDesc: "व्यावहारिक शिक्षा और सामुदायिक संपर्क के माध्यम से, बच्चे आत्मविश्वास, कौशल और अपने गांवों में सकारात्मक बदलाव लाने की बुद्धि विकसित करते हैं।",
     sponsorName: "— गुरप्रीत सिंह, प्रायोजक —",
@@ -180,20 +250,20 @@ function HeroSection({ locale = "hi" }) {
         '"'
       ] }),
       /* @__PURE__ */ jsx("p", { className: "text-lg text-red-700 mb-8 max-w-2xl mx-auto leading-relaxed", children: t("heroMission") }),
-      /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-8 shadow-lg border-2 border-red-800 mb-8 max-w-2xl mx-auto", children: [
+      /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-green-100 to-yellow-100 rounded-2xl p-8 shadow-lg border-2 border-red-800 mb-8 max-w-2xl mx-auto", children: [
         /* @__PURE__ */ jsxs("div", { className: "flex items-center justify-center gap-2 mb-4", children: [
           /* @__PURE__ */ jsx(Award, { className: "w-6 h-6 text-red-700" }),
-          /* @__PURE__ */ jsx("h3", { className: "text-2xl font-bold text-red-800", children: t("paisaCourseTitle") })
+          /* @__PURE__ */ jsx("h3", { className: "text-2xl font-bold text-red-800", children: t("foundationCourseTitle") })
         ] }),
-        /* @__PURE__ */ jsx("p", { className: "text-red-700", children: t("paisaCourseDesc") })
+        /* @__PURE__ */ jsx("p", { className: "text-red-700", children: t("foundationCourseDesc") })
       ] }),
       /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4 justify-center", children: [
         /* @__PURE__ */ jsx(
           "button",
           {
-            onClick: () => document.getElementById("paisa-section")?.scrollIntoView({ behavior: "smooth" }),
+            onClick: () => document.getElementById("nature-course-section")?.scrollIntoView({ behavior: "smooth" }),
             className: "px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg",
-            children: t("learnPaisaBtn")
+            children: t("learnMoreBtn")
           }
         ),
         /* @__PURE__ */ jsx(
@@ -217,59 +287,94 @@ const $$Hero = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "HeroSection", HeroSection, { "locale": locale, "client:load": true, "client:component-hydration": "load", "client:component-path": "/workspaces/swasia/src/components/HeroSection", "client:component-export": "default" })}`;
 }, "/workspaces/swasia/src/components/Hero.astro", void 0);
 
-function PaisaProgram({ locale = "hi" }) {
+function NatureCourse({ locale = "hi" }) {
   const { t } = useTranslation(locale);
-  const paisaComponents = [
-    {
-      icon: Coins,
-      title: t("earningTitle"),
-      description: t("earningDesc"),
-      color: "text-yellow-700"
-    },
-    {
-      icon: TrendingUp,
-      title: t("usingTitle"),
-      description: t("usingDesc"),
-      color: "text-red-700"
-    },
-    {
-      icon: Heart,
-      title: t("raisingTitle"),
-      description: t("raisingDesc"),
-      color: "text-orange-700"
-    }
-  ];
-  return /* @__PURE__ */ jsx("section", { id: "paisa-section", className: "py-20 bg-white", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto px-6", children: [
+  return /* @__PURE__ */ jsx("section", { id: "nature-course-section", className: "py-20 bg-gradient-to-br from-green-50 to-yellow-50", children: /* @__PURE__ */ jsxs("div", { className: "container mx-auto px-6", children: [
     /* @__PURE__ */ jsxs("div", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ jsx("h2", { className: "text-4xl md:text-5xl font-bold text-red-800 mb-6", children: t("paisaProgramTitle") }),
-      /* @__PURE__ */ jsx("p", { className: "text-xl text-red-700 max-w-3xl mx-auto", children: t("paisaProgramDesc") })
-    ] }),
-    /* @__PURE__ */ jsx("div", { className: "grid md:grid-cols-3 gap-8 mb-16", children: paisaComponents.map((component, index) => {
-      const Icon = component.icon;
-      return /* @__PURE__ */ jsx(
-        "div",
-        {
-          className: "bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-8 border-2 border-red-700 hover:shadow-lg transition-all duration-300",
-          children: /* @__PURE__ */ jsxs("div", { className: "text-center", children: [
-            /* @__PURE__ */ jsx("div", { className: "w-16 h-16 bg-red-800 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg", children: /* @__PURE__ */ jsx(Icon, { className: "w-8 h-8 text-yellow-200" }) }),
-            /* @__PURE__ */ jsx("h3", { className: "text-2xl font-bold text-red-800 mb-4", children: component.title }),
-            /* @__PURE__ */ jsx("p", { className: "text-red-700 leading-relaxed", children: component.description })
-          ] })
-        },
-        index
-      );
-    }) }),
-    /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-12 border-2 border-red-800 shadow-lg text-center", children: [
-      /* @__PURE__ */ jsx("div", { className: "w-20 h-20 rounded-full mx-auto mb-6 border-2 border-red-800 shadow-lg overflow-hidden bg-white flex items-center justify-center", children: /* @__PURE__ */ jsx(
+      /* @__PURE__ */ jsx("div", { className: "w-24 h-24 rounded-full mx-auto mb-6 border-2 border-red-800 shadow-lg overflow-hidden bg-white flex items-center justify-center", children: /* @__PURE__ */ jsx(
         "img",
         {
           src: "/swasia/swasia-logo.png",
           alt: "Swasia Logo",
-          className: "w-24 h-24 object-cover"
+          className: "w-28 h-28 object-cover"
         }
       ) }),
-      /* @__PURE__ */ jsx("h3", { className: "text-3xl font-bold text-red-800 mb-6", children: t("gamifiedLearningTitle") }),
-      /* @__PURE__ */ jsx("p", { className: "text-lg text-red-700 max-w-3xl mx-auto leading-relaxed", children: t("gamifiedLearningDesc") })
+      /* @__PURE__ */ jsx("h2", { className: "text-4xl md:text-5xl font-bold text-red-800 mb-6", children: t("natureCourseTitle") }),
+      /* @__PURE__ */ jsxs("div", { className: "max-w-3xl mx-auto mb-8", children: [
+        /* @__PURE__ */ jsx("p", { className: "text-lg text-red-700 mb-4", children: t("natureCourseSubtitle") }),
+        /* @__PURE__ */ jsx("div", { className: "bg-yellow-100 rounded-lg p-4 border-2 border-red-200", children: /* @__PURE__ */ jsx("p", { className: "text-red-800 font-medium", children: t("courseBasics") }) })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxs("div", { className: "mb-16", children: [
+      /* @__PURE__ */ jsx("h3", { className: "text-3xl font-bold text-red-800 mb-8 text-center", children: t("courseOverviewTitle") }),
+      /* @__PURE__ */ jsxs("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6", children: [
+        /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-6 border-2 border-red-800 shadow-lg", children: [
+          /* @__PURE__ */ jsx("div", { className: "flex items-center justify-center w-12 h-12 bg-red-800 rounded-full mb-4 mx-auto", children: /* @__PURE__ */ jsx(Sprout, { className: "w-6 h-6 text-white" }) }),
+          /* @__PURE__ */ jsx("h4", { className: "text-xl font-bold text-red-800 mb-3 text-center", children: t("week1Title") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-700 text-sm mb-3 text-center font-medium", children: t("week1Theme") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("week1Activities") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-6 border-2 border-red-800 shadow-lg", children: [
+          /* @__PURE__ */ jsx("div", { className: "flex items-center justify-center w-12 h-12 bg-red-800 rounded-full mb-4 mx-auto", children: /* @__PURE__ */ jsx(Droplets, { className: "w-6 h-6 text-white" }) }),
+          /* @__PURE__ */ jsx("h4", { className: "text-xl font-bold text-red-800 mb-3 text-center", children: t("week2Title") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-700 text-sm mb-3 text-center font-medium", children: t("week2Theme") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("week2Activities") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-yellow-100 to-orange-50 rounded-2xl p-6 border-2 border-red-800 shadow-lg", children: [
+          /* @__PURE__ */ jsx("div", { className: "flex items-center justify-center w-12 h-12 bg-red-800 rounded-full mb-4 mx-auto", children: /* @__PURE__ */ jsx(Package, { className: "w-6 h-6 text-white" }) }),
+          /* @__PURE__ */ jsx("h4", { className: "text-xl font-bold text-red-800 mb-3 text-center", children: t("week3Title") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-700 text-sm mb-3 text-center font-medium", children: t("week3Theme") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("week3Activities") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-purple-100 to-pink-50 rounded-2xl p-6 border-2 border-red-800 shadow-lg", children: [
+          /* @__PURE__ */ jsx("div", { className: "flex items-center justify-center w-12 h-12 bg-red-800 rounded-full mb-4 mx-auto", children: /* @__PURE__ */ jsx(Users, { className: "w-6 h-6 text-white" }) }),
+          /* @__PURE__ */ jsx("h4", { className: "text-xl font-bold text-red-800 mb-3 text-center", children: t("week4Title") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-700 text-sm mb-3 text-center font-medium", children: t("week4Theme") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("week4Activities") })
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsx("div", { className: "mb-16", children: /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-amber-100 to-yellow-100 rounded-2xl p-8 border-2 border-red-800 shadow-lg", children: [
+      /* @__PURE__ */ jsx("h3", { className: "text-3xl font-bold text-red-800 mb-6 text-center", children: t("dailyScheduleTitle") }),
+      /* @__PURE__ */ jsxs("div", { className: "grid md:grid-cols-2 lg:grid-cols-3 gap-4", children: [
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-lg p-4 border border-red-200", children: [
+          /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-2", children: t("morningCircle") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("morningCircleDesc") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-lg p-4 border border-red-200", children: [
+          /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-2", children: t("handsInSoil") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("handsInSoilDesc") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-lg p-4 border border-red-200", children: [
+          /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-2", children: t("creativeHour") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("creativeHourDesc") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-lg p-4 border border-red-200", children: [
+          /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-2", children: t("reflectionJournal") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("reflectionJournalDesc") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-lg p-4 border border-red-200 md:col-span-2 lg:col-span-2", children: [
+          /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-2", children: t("miniWorkshops") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("miniWorkshopsDesc") })
+        ] })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsxs("div", { className: "text-center", children: [
+      /* @__PURE__ */ jsx("h3", { className: "text-3xl font-bold text-red-800 mb-8", children: t("whySwasiaWorksTitle") }),
+      /* @__PURE__ */ jsxs("div", { className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto", children: [
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-xl p-6 shadow-lg border-2 border-red-200", children: [
+          /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-3", children: t("learningByDoing") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("learningByDoingDesc") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-xl p-6 shadow-lg border-2 border-red-200", children: [
+          /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-3", children: t("realWorldOutputs") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("realWorldOutputsDesc") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-xl p-6 shadow-lg border-2 border-red-200", children: [
+          /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-3", children: t("sustainableVision") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("sustainableVisionDesc") })
+        ] })
+      ] })
     ] })
   ] }) });
 }
@@ -410,4 +515,4 @@ function ContactSection({ locale = "hi" }) {
   ] }) });
 }
 
-export { $$Layout as $, AwardsProgram as A, ContactSection as C, PaisaProgram as P, SupportSwasia as S, $$Hero as a };
+export { $$Layout as $, AwardsProgram as A, ContactSection as C, NatureCourse as N, SupportSwasia as S, $$Hero as a };
