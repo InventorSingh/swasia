@@ -69,11 +69,11 @@ export default function PaisaProgram({ locale = 'hi' }: PaisaProgramProps) {
 
         {/* Method Section - Simplified */}
         <div className="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-12 border-2 border-red-800 shadow-lg text-center">
-          <div className="w-20 h-20 rounded-full mx-auto mb-6 border-2 border-red-800 shadow-lg overflow-hidden">
+          <div className="w-20 h-20 rounded-full mx-auto mb-6 border-2 border-red-800 shadow-lg overflow-hidden bg-white flex items-center justify-center">
             <img 
               src="/swasia/swasia-logo.png" 
               alt="Swasia Logo" 
-              className="w-full h-full object-cover"
+              className="w-24 h-24 object-cover"
             />
           </div>
           <h3 className="text-3xl font-bold text-red-800 mb-6">

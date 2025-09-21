@@ -38,11 +38,11 @@ export default function AwardsProgram({ locale = 'hi' }: AwardsProgramProps) {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           {/* Logo Header */}
-          <div className="w-24 h-24 rounded-full mx-auto mb-6 border-2 border-red-800 shadow-lg overflow-hidden">
+          <div className="w-24 h-24 rounded-full mx-auto mb-6 border-2 border-red-800 shadow-lg overflow-hidden bg-white flex items-center justify-center">
             <img 
               src="/swasia/swasia-logo.png" 
               alt="Swasia Logo" 
-              className="w-full h-full object-cover"
+              className="w-28 h-28 object-cover"
             />
           </div>
           

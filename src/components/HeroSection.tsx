@@ -16,11 +16,11 @@ export default function HeroSection({ locale = 'hi' }: HeroSectionProps) {
       
       <div className="max-w-4xl mx-auto text-center px-6">
         {/* Logo - Full Circle */}
-        <div className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-red-800 shadow-lg overflow-hidden">
+        <div className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-red-800 shadow-lg overflow-hidden bg-white flex items-center justify-center">
           <img 
             src="/swasia/swasia-logo.png" 
             alt="Swasia Logo" 
-            className="w-full h-full object-cover"
+            className="w-40 h-40 object-cover"
           />
         </div>
         
