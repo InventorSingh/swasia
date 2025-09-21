@@ -1,106 +1,63 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { ChevronDown, Leaf } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden bg-gradient-to-br from-emerald-50 via-green-50 to-white pt-20">
-      {/* Animated background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20v20h20z' fill='%2310b981' fill-opacity='0.1'/%3E%3C/svg%3E")`,
-          backgroundSize: '60px 60px'
-        }}></div>
-      </div>
+    <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
       
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-8"
-        >
-          <Leaf className="w-4 h-4" />
-          <span>Building Living Communities</span>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="mb-6"
-        >
+      <div className="max-w-4xl mx-auto text-center px-6">
+        {/* Logo - Full Circle */}
+        <div className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-red-800 shadow-lg overflow-hidden">
           <img 
             src="/swasia/swasia-logo.png" 
             alt="Swasia Logo" 
-            className="h-24 md:h-32 mx-auto"
+            className="w-full h-full object-cover"
           />
-        </motion.div>
+        </div>
         
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-6xl md:text-8xl font-black text-gray-900 mb-6 tracking-tight"
-        >
-          Swasia
-        </motion.h1>
+        {/* Main Title */}
+        <h1 className="text-6xl md:text-7xl font-bold text-red-800 mb-8 tracking-wide">
+          SWASIA
+        </h1>
         
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-2xl md:text-3xl text-green-700 italic mb-8 font-light"
-        >
-          "May the nature be with you."
-        </motion.p>
+        {/* Vision Quote */}
+        <blockquote className="text-xl md:text-2xl text-red-800 italic mb-8 max-w-3xl mx-auto">
+          "Building the future together, one child at a time."
+        </blockquote>
         
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed"
-        >
-          Transforming villages and towns into thriving living ecosystems that provide fresh food, 
-          clean air, and healthier lives for families — while supporting local wildlife and nature.
-        </motion.p>
+        {/* Mission Statement */}
+        <p className="text-lg text-red-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Empowering children with practical skills that create opportunities 
+          and strengthen communities.
+        </p>
         
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <a 
-            href="#mission" 
-            className="group px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-200 font-medium inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+        {/* Paisa Course Highlight - Simplified */}
+        <div className="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-8 shadow-lg border-2 border-red-800 mb-8 max-w-2xl mx-auto">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Award className="w-6 h-6 text-red-700" />
+            <h3 className="text-2xl font-bold text-red-800">Foundation Course: Paisa</h3>
+          </div>
+          <p className="text-red-700">
+            Teaching children practical money skills that build confidence, 
+            create opportunities, and strengthen villages.
+          </p>
+        </div>
+        
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button 
+            onClick={() => document.getElementById('paisa-section')?.scrollIntoView({ behavior: 'smooth' })}
+            className="px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg"
           >
-            See Our Impact
-            <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
-          </a>
-          <a 
-            href="#join" 
-            className="px-8 py-4 border-2 border-green-600 text-green-700 rounded-full hover:bg-green-50 transition-all duration-200 font-medium hover:border-green-700"
+            Learn About Paisa
+          </button>
+          <button 
+            onClick={() => document.getElementById('awards-section')?.scrollIntoView({ behavior: 'smooth' })}
+            className="px-8 py-4 border-2 border-red-800 text-red-800 rounded-full hover:bg-red-50 transition-all duration-200 font-medium"
           >
-            Transform Your Community
-          </a>
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="mt-16 flex flex-col items-center"
-        >
-          <span className="text-sm text-gray-500 mb-2">Discover More</span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <ChevronDown className="w-5 h-5 text-green-600" />
-          </motion.div>
-        </motion.div>
+            View Awards Program
+          </button>
+        </div>
       </div>
     </section>
   );

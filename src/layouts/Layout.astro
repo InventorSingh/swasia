@@ -10,20 +10,11 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Swasia - Building treehouses in urban areas to clean air, cool cities, and reconnect communities with nature." />
+    <meta name="description" content="Swasia" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/swasia/swasia-logo.png" />
-    <link rel="icon" type="image/svg+xml" href="/swasia/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <title>{title}</title>
   </head>
-  <body class="bg-white text-gray-900 relative">
-    <!-- Subtle background pattern -->
-    <div class="fixed inset-0 opacity-5 pointer-events-none">
-      <div style="background-image: radial-gradient(circle at 1px 1px, rgba(16, 185, 129, 0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
-    </div>
+  <body class="bg-white text-gray-900">
     <slot />
   </body>
 </html>
