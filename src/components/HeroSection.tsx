@@ -39,24 +39,24 @@ export default function HeroSection({ locale = 'hi' }: HeroSectionProps) {
           {t('heroMission')}
         </p>
         
-        {/* Paisa Course Highlight - Simplified */}
-        <div className="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-8 shadow-lg border-2 border-red-800 mb-8 max-w-2xl mx-auto">
+        {/* Nature Course Highlight - New Foundation Course */}
+        <div className="bg-gradient-to-br from-green-100 to-yellow-100 rounded-2xl p-8 shadow-lg border-2 border-red-800 mb-8 max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Award className="w-6 h-6 text-red-700" />
-            <h3 className="text-2xl font-bold text-red-800">{t('paisaCourseTitle')}</h3>
+            <h3 className="text-2xl font-bold text-red-800">{t('foundationCourseTitle')}</h3>
           </div>
           <p className="text-red-700">
-            {t('paisaCourseDesc')}
+            {t('foundationCourseDesc')}
           </p>
         </div>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 
-            onClick={() => document.getElementById('paisa-section')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('nature-course-section')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg"
           >
-            {t('learnPaisaBtn')}
+            {t('learnMoreBtn')}
           </button>
           <button 
             onClick={() => document.getElementById('awards-section')?.scrollIntoView({ behavior: 'smooth' })}
