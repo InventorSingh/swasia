@@ -4,7 +4,7 @@ import 'html-escaper';
 import 'clsx';
 /* empty css         */
 import { jsx, jsxs } from 'react/jsx-runtime';
-import { Globe, Award, Sprout, Droplets, Package, Users, Star, Coffee, Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { Globe, Award, Sprout, Droplets, Package, Users, ShoppingCart, BookOpen, Calendar, Download, Star, Coffee, Heart, Mail, Phone, MapPin } from 'lucide-react';
 
 const $$Astro$1 = createAstro("https://inventorsingh.github.io");
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
@@ -24,6 +24,7 @@ const translations = {
     foundationCourseDesc: "Ages 6-12 learn agriculture, entrepreneurship, and sustainability through hands-on experience from seeds to harvest.",
     learnMoreBtn: "Learn More",
     viewAwardsBtn: "View Awards Program",
+    viewProductsBtn: "View Products",
     // Nature Course
     natureCourseTitle: "Foundation Course: Grow with Nature",
     natureCourseSubtitle: "Target Students: Ages 6–12 | Duration: 4 Weeks (Pilot Program) | Locations: Village Plots, Showrooms in Uchana & Narwana",
@@ -59,6 +60,37 @@ const translations = {
     realWorldOutputsDesc: "Produces actual food, eco-products that students can sell and use",
     sustainableVision: "Sustainable Vision",
     sustainableVisionDesc: "Instills long-term thinking for resilient ecosystems and communities",
+    // Products Section
+    productsTitle: "Swasia Products & Resources",
+    productsDesc: "Quality seeds, guides, and tools to grow your own thriving indoor ecosystem at home.",
+    bananaePepperTitle: "Banana Pepper",
+    organicSeeds: "Organic Seeds",
+    featuredProduct: "Featured Product",
+    bananaePepperDesc: "Premium organic banana pepper seeds perfect for indoor gardening. Easy to grow, these peppers add flavor to your meals while teaching children about plant growth cycles.",
+    buyNowBtn: "Buy Now",
+    seedGuideTitle: "🌱 Swasia Seed-to-Plant Guide",
+    seedGuideDesc: "A comprehensive guide showing when to collect seeds and when to plant them, with simple methods that even kids can follow.",
+    downloadGuideBtn: "Download Free Guide (PDF)",
+    tomato: "Tomato",
+    bananaePepper: "Banana Pepper",
+    basil: "Basil",
+    mint: "Mint",
+    cilantro: "Cilantro",
+    beans: "Beans",
+    marigold: "Marigold",
+    aloe: "Aloe Vera",
+    spiderPlant: "Spider Plant",
+    nasturtium: "Nasturtium",
+    yearRound: "Year-round",
+    collect: "Collect",
+    plant: "Plant",
+    comingSoonTitle: "Coming Soon",
+    organicSeedKit: "Organic Seed Kit",
+    organicSeedKitDesc: "Complete starter kit with 10 varieties of organic seeds for indoor gardening",
+    gardeningWorkbook: "Children's Gardening Workbook",
+    gardeningWorkbookDesc: "Interactive workbook with activities, growth charts, and learning exercises",
+    seasonalCalendar: "Seasonal Planting Calendar",
+    seasonalCalendarDesc: "Month-by-month guide for what to plant when in your local climate",
     // Paisa Program
     paisaProgramTitle: "Foundation Course: Paisa",
     paisaProgramDesc: "More than money — Paisa becomes a medium of positive change, sparking innovation in the next generation and laying the foundation for resilient communities.",
@@ -111,6 +143,7 @@ const translations = {
     foundationCourseDesc: "6-12 साल के बच्चे बीज से फसल तक के व्यावहारिक अनुभव के माध्यम से कृषि, उद्यमिता और स्थिरता सीखते हैं।",
     learnMoreBtn: "और जानें",
     viewAwardsBtn: "पुरस्कार कार्यक्रम देखें",
+    viewProductsBtn: "उत्पाद देखें",
     // Nature Course
     natureCourseTitle: "आधारभूत पाठ्यक्रम: प्रकृति के साथ बढ़ना",
     natureCourseSubtitle: "लक्षित छात्र: 6–12 साल | अवधि: 4 सप्ताह (पायलट कार्यक्रम) | स्थान: गांव के खेत, उचाना और नरवाना में शोरूम",
@@ -146,6 +179,37 @@ const translations = {
     realWorldOutputsDesc: "वास्तविक भोजन, इको-प्रोडक्ट्स का उत्पादन जिन्हें छात्र बेच और उपयोग कर सकते हैं",
     sustainableVision: "टिकाऊ दृष्टिकोण",
     sustainableVisionDesc: "लचीले पारिस्थितिकी तंत्र और समुदायों के लिए दीर्घकालिक सोच पैदा करता है",
+    // Products Section
+    productsTitle: "स्वासिया उत्पाद और संसाधन",
+    productsDesc: "घर पर अपना समृद्ध इनडोर पारिस्थितिकी तंत्र विकसित करने के लिए गुणवत्तापूर्ण बीज, गाइड और उपकरण।",
+    bananaePepperTitle: "केला मिर्च",
+    organicSeeds: "जैविक बीज",
+    featuredProduct: "विशेष उत्पाद",
+    bananaePepperDesc: "इनडोर बागवानी के लिए बेहतरीन जैविक केला मिर्च के बीज। उगाने में आसान, ये मिर्च आपके भोजन में स्वाद जोड़ते हैं और बच्चों को पौधों के विकास चक्र के बारे में सिखाते हैं।",
+    buyNowBtn: "अभी खरीदें",
+    seedGuideTitle: "🌱 स्वासिया बीज-से-पौधा गाइड",
+    seedGuideDesc: "एक व्यापक गाइड जो दिखाता है कि बीज कब इकट्ठा करें और कब लगाएं, सरल तरीकों के साथ जिन्हें बच्चे भी फॉलो कर सकते हैं।",
+    downloadGuideBtn: "मुफ्त गाइड डाउनलोड करें (PDF)",
+    tomato: "टमाटर",
+    bananaePepper: "केला मिर्च",
+    basil: "तुलसी",
+    mint: "पुदीना",
+    cilantro: "धनिया",
+    beans: "सेम",
+    marigold: "गेंदा",
+    aloe: "एलो वेरा",
+    spiderPlant: "स्पाइडर प्लांट",
+    nasturtium: "नास्टर्टियम",
+    yearRound: "साल भर",
+    collect: "इकट्ठा करें",
+    plant: "लगाएं",
+    comingSoonTitle: "जल्दी आ रहा है",
+    organicSeedKit: "जैविक बीज किट",
+    organicSeedKitDesc: "इनडोर बागवानी के लिए 10 किस्मों के जैविक बीजों के साथ पूरा स्टार्टर किट",
+    gardeningWorkbook: "बच्चों की बागवानी कार्यपुस्तिका",
+    gardeningWorkbookDesc: "गतिविधियों, विकास चार्ट और सीखने के अभ्यासों के साथ इंटरैक्टिव कार्यपुस्तिका",
+    seasonalCalendar: "मौसमी रोपण कैलेंडर",
+    seasonalCalendarDesc: "आपकी स्थानीय जलवायु में कब क्या लगाना है, इसके लिए महीना-दर-महीना गाइड",
     // Paisa Program
     paisaProgramTitle: "आधारभूत पाठ्यक्रम: पैसा",
     paisaProgramDesc: "सिर्फ पैसे से कहीं अधिक — पैसा सकारात्मक बदलाव का माध्यम बनता है, अगली पीढ़ी में नवाचार को प्रेरित करता है और लचीले समुदायों की नींव रखता है।",
@@ -269,9 +333,9 @@ function HeroSection({ locale = "hi" }) {
         /* @__PURE__ */ jsx(
           "button",
           {
-            onClick: () => document.getElementById("awards-section")?.scrollIntoView({ behavior: "smooth" }),
+            onClick: () => document.getElementById("products-section")?.scrollIntoView({ behavior: "smooth" }),
             className: "px-8 py-4 border-2 border-red-800 text-red-800 rounded-full hover:bg-red-50 transition-all duration-200 font-medium",
-            children: t("viewAwardsBtn")
+            children: t("viewProductsBtn")
           }
         )
       ] })
@@ -373,6 +437,101 @@ function NatureCourse({ locale = "hi" }) {
         /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-xl p-6 shadow-lg border-2 border-red-200", children: [
           /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 mb-3", children: t("sustainableVision") }),
           /* @__PURE__ */ jsx("p", { className: "text-red-600 text-sm", children: t("sustainableVisionDesc") })
+        ] })
+      ] })
+    ] })
+  ] }) });
+}
+
+function ProductsSection({ locale = "hi" }) {
+  const { t } = useTranslation(locale);
+  return /* @__PURE__ */ jsx("section", { id: "products-section", className: "py-20 bg-gradient-to-br from-amber-50 to-green-50", children: /* @__PURE__ */ jsxs("div", { className: "container mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx("div", { className: "w-24 h-24 rounded-full mx-auto mb-6 border-2 border-red-800 shadow-lg overflow-hidden bg-white flex items-center justify-center", children: /* @__PURE__ */ jsx(
+        "img",
+        {
+          src: "/swasia/swasia-logo.png",
+          alt: "Swasia Logo",
+          className: "w-28 h-28 object-cover"
+        }
+      ) }),
+      /* @__PURE__ */ jsx("h2", { className: "text-4xl md:text-5xl font-bold text-red-800 mb-6", children: t("productsTitle") }),
+      /* @__PURE__ */ jsx("p", { className: "text-xl text-red-700 max-w-3xl mx-auto", children: t("productsDesc") })
+    ] }),
+    /* @__PURE__ */ jsx("div", { className: "max-w-4xl mx-auto mb-16", children: /* @__PURE__ */ jsx("div", { className: "bg-gradient-to-br from-yellow-100 to-orange-100 rounded-3xl p-8 border-3 border-red-800 shadow-xl", children: /* @__PURE__ */ jsxs("div", { className: "flex flex-col md:flex-row items-center gap-8", children: [
+      /* @__PURE__ */ jsx("div", { className: "md:w-1/3", children: /* @__PURE__ */ jsx("div", { className: "bg-white rounded-2xl p-6 shadow-lg border-2 border-red-700", children: /* @__PURE__ */ jsxs("div", { className: "text-center", children: [
+        /* @__PURE__ */ jsx(Sprout, { className: "w-16 h-16 text-red-700 mx-auto mb-4" }),
+        /* @__PURE__ */ jsx("h3", { className: "text-2xl font-bold text-red-800 mb-2", children: t("bananaePepperTitle") }),
+        /* @__PURE__ */ jsx("p", { className: "text-red-600 font-medium", children: t("organicSeeds") })
+      ] }) }) }),
+      /* @__PURE__ */ jsxs("div", { className: "md:w-2/3", children: [
+        /* @__PURE__ */ jsx("h4", { className: "text-3xl font-bold text-red-800 mb-4", children: t("featuredProduct") }),
+        /* @__PURE__ */ jsx("p", { className: "text-red-700 mb-6 text-lg leading-relaxed", children: t("bananaePepperDesc") }),
+        /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
+          /* @__PURE__ */ jsxs("button", { className: "px-8 py-3 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg flex items-center gap-2", children: [
+            /* @__PURE__ */ jsx(ShoppingCart, { className: "w-5 h-5" }),
+            t("buyNowBtn")
+          ] }),
+          /* @__PURE__ */ jsxs("button", { className: "px-8 py-3 border-2 border-red-800 text-red-800 rounded-full hover:bg-red-50 transition-all duration-200 font-medium flex items-center gap-2", children: [
+            /* @__PURE__ */ jsx(BookOpen, { className: "w-5 h-5" }),
+            t("learnMoreBtn")
+          ] })
+        ] })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("div", { className: "max-w-6xl mx-auto mb-16", children: /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-br from-green-100 to-yellow-100 rounded-3xl p-8 border-3 border-red-800 shadow-xl", children: [
+      /* @__PURE__ */ jsxs("div", { className: "text-center mb-8", children: [
+        /* @__PURE__ */ jsx(Calendar, { className: "w-12 h-12 text-red-700 mx-auto mb-4" }),
+        /* @__PURE__ */ jsx("h3", { className: "text-3xl font-bold text-red-800 mb-4", children: t("seedGuideTitle") }),
+        /* @__PURE__ */ jsx("p", { className: "text-red-700 text-lg max-w-3xl mx-auto mb-6", children: t("seedGuideDesc") }),
+        /* @__PURE__ */ jsxs("button", { className: "px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg flex items-center gap-2 mx-auto", children: [
+          /* @__PURE__ */ jsx(Download, { className: "w-5 h-5" }),
+          t("downloadGuideBtn")
+        ] })
+      ] }),
+      /* @__PURE__ */ jsx("div", { className: "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-8", children: [
+        { name: t("tomato"), collection: "Aug-Sep", plantation: "Feb-Mar" },
+        { name: t("bananaePepper"), collection: "Aug-Sep", plantation: "Feb-Mar" },
+        { name: t("basil"), collection: "Jul-Aug", plantation: "Feb-Mar" },
+        { name: t("mint"), collection: "Jul-Aug", plantation: "Feb-Mar" },
+        { name: t("cilantro"), collection: "May-Jun", plantation: "Feb-Mar" },
+        { name: t("beans"), collection: "Sep-Oct", plantation: "Mar-Apr" },
+        { name: t("marigold"), collection: "Aug-Sep", plantation: "Mar-Apr" },
+        { name: t("aloe"), collection: "Spring", plantation: "Spring" },
+        { name: t("spiderPlant"), collection: t("yearRound"), plantation: t("yearRound") },
+        { name: t("nasturtium"), collection: "Aug-Sep", plantation: "Apr-May" }
+      ].map((plant, index) => /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-lg p-3 border-2 border-red-600 shadow-md text-center", children: [
+        /* @__PURE__ */ jsx("div", { className: "w-8 h-8 bg-red-700 rounded-full mx-auto mb-2 flex items-center justify-center", children: /* @__PURE__ */ jsx(Sprout, { className: "w-4 h-4 text-white" }) }),
+        /* @__PURE__ */ jsx("h4", { className: "font-bold text-red-800 text-sm mb-1", children: plant.name }),
+        /* @__PURE__ */ jsxs("p", { className: "text-xs text-red-600 mb-1", children: [
+          t("collect"),
+          ": ",
+          plant.collection
+        ] }),
+        /* @__PURE__ */ jsxs("p", { className: "text-xs text-red-600", children: [
+          t("plant"),
+          ": ",
+          plant.plantation
+        ] })
+      ] }, index)) })
+    ] }) }),
+    /* @__PURE__ */ jsxs("div", { className: "text-center", children: [
+      /* @__PURE__ */ jsx("h3", { className: "text-2xl font-bold text-red-800 mb-8", children: t("comingSoonTitle") }),
+      /* @__PURE__ */ jsxs("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto", children: [
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-2xl p-6 border-2 border-red-700 shadow-lg", children: [
+          /* @__PURE__ */ jsx("div", { className: "w-16 h-16 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center", children: /* @__PURE__ */ jsx(Sprout, { className: "w-8 h-8 text-red-700" }) }),
+          /* @__PURE__ */ jsx("h4", { className: "text-xl font-bold text-red-800 mb-2", children: t("organicSeedKit") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600", children: t("organicSeedKitDesc") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-2xl p-6 border-2 border-red-700 shadow-lg", children: [
+          /* @__PURE__ */ jsx("div", { className: "w-16 h-16 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center", children: /* @__PURE__ */ jsx(BookOpen, { className: "w-8 h-8 text-red-700" }) }),
+          /* @__PURE__ */ jsx("h4", { className: "text-xl font-bold text-red-800 mb-2", children: t("gardeningWorkbook") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600", children: t("gardeningWorkbookDesc") })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "bg-white rounded-2xl p-6 border-2 border-red-700 shadow-lg", children: [
+          /* @__PURE__ */ jsx("div", { className: "w-16 h-16 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center", children: /* @__PURE__ */ jsx(Calendar, { className: "w-8 h-8 text-red-700" }) }),
+          /* @__PURE__ */ jsx("h4", { className: "text-xl font-bold text-red-800 mb-2", children: t("seasonalCalendar") }),
+          /* @__PURE__ */ jsx("p", { className: "text-red-600", children: t("seasonalCalendarDesc") })
         ] })
       ] })
     ] })
@@ -515,4 +674,4 @@ function ContactSection({ locale = "hi" }) {
   ] }) });
 }
 
-export { $$Layout as $, AwardsProgram as A, ContactSection as C, NatureCourse as N, SupportSwasia as S, $$Hero as a };
+export { $$Layout as $, AwardsProgram as A, ContactSection as C, NatureCourse as N, ProductsSection as P, SupportSwasia as S, $$Hero as a };
