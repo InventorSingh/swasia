@@ -59,10 +59,10 @@ export default function HeroSection({ locale = 'hi' }: HeroSectionProps) {
             {t('learnMoreBtn')}
           </button>
           <button 
-            onClick={() => document.getElementById('awards-section')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('products-section')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 border-2 border-red-800 text-red-800 rounded-full hover:bg-red-50 transition-all duration-200 font-medium"
           >
-            {t('viewAwardsBtn')}
+            {t('viewProductsBtn')}
           </button>
         </div>
       </div>
