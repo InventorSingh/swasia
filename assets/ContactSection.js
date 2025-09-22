@@ -484,10 +484,18 @@ function ProductsSection({ locale = "hi" }) {
         /* @__PURE__ */ jsx(Calendar, { className: "w-12 h-12 text-red-700 mx-auto mb-4" }),
         /* @__PURE__ */ jsx("h3", { className: "text-3xl font-bold text-red-800 mb-4", children: t("seedGuideTitle") }),
         /* @__PURE__ */ jsx("p", { className: "text-red-700 text-lg max-w-3xl mx-auto mb-6", children: t("seedGuideDesc") }),
-        /* @__PURE__ */ jsxs("button", { className: "px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg flex items-center gap-2 mx-auto", children: [
-          /* @__PURE__ */ jsx(Download, { className: "w-5 h-5" }),
-          t("downloadGuideBtn")
-        ] })
+        /* @__PURE__ */ jsxs(
+          "a",
+          {
+            href: "/swasia/resources/Swasia_Indoor_Ecosystem_Kit_Branded.pdf",
+            download: "Swasia_Indoor_Ecosystem_Kit_Branded.pdf",
+            className: "px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg flex items-center gap-2 mx-auto w-fit",
+            children: [
+              /* @__PURE__ */ jsx(Download, { className: "w-5 h-5" }),
+              t("downloadGuideBtn")
+            ]
+          }
+        )
       ] }),
       /* @__PURE__ */ jsx("div", { className: "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-8", children: [
         { name: t("tomato"), collection: "Aug-Sep", plantation: "Feb-Mar" },
