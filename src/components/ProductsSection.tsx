@@ -80,10 +80,14 @@ export default function ProductsSection({ locale = 'hi' }: ProductsSectionProps)
               <p className="text-red-700 text-lg max-w-3xl mx-auto mb-6">
                 {t('seedGuideDesc')}
               </p>
-              <button className="px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg flex items-center gap-2 mx-auto">
+              <a 
+                href="/swasia/resources/Swasia_Indoor_Ecosystem_Kit_Branded.pdf" 
+                download="Swasia_Indoor_Ecosystem_Kit_Branded.pdf"
+                className="px-8 py-4 bg-red-800 text-yellow-100 rounded-full hover:bg-red-900 transition-all duration-200 font-medium shadow-lg flex items-center gap-2 mx-auto w-fit"
+              >
                 <Download className="w-5 h-5" />
                 {t('downloadGuideBtn')}
-              </button>
+              </a>
             </div>
 
             {/* Sample Plants Grid */}
